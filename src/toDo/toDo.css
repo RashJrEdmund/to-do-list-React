@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+.todoList {
+  width: 100%;
+  height: 100%;
+}
+
+.todoList header {
+  font-family: serif;
+  color: gold;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  transform: 0.5s;
+}
+
+.todoList .todoList__form {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.todoList__form input {
+  width: 100%;
+  height: fit-content;
+  min-height: 30px;
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.todoList__form input {
+  width: 100%;
+  height: fit-content;
+  min-height: 60px;
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.todoList__form .form-btn {
+  background-color: peru;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  align-self: flex-end;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.todoList__form .form-btn:hover {
+  box-shadow: 0 0 10px #333;
+}
+
+.todoList .todoList__Tasks {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.todoList__Tasks .todoList__Task {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.todoList__Task .todoList__Tasks--Task-sep-sep {
+  background-color: peru;
+  border-radius: 3px;
+  width: 70%;
+  min-height: 50px;
+  height: fit-content;
+  word-break: normal;
+  margin: 0;
+  align-self: flex-start;
+  padding: 10px;
+  font-size: 1.3rem;
+
+}
+
+
+.todoList__Task .Task-btns {
+  width: 150px;
+  align-self: flex-end;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.todoList__Task .tick {
+  background-color: yellow;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.todoList__Task .delete-btn {
+  background-color: brown;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.todoList__Task .delete-btn:hover,
+.todoList__Task .tick:hover {
+  box-shadow: 0 0 10px #666c;
+  transform: translateY(5px);
+}
